@@ -30,7 +30,7 @@ export AZURE_VM_KEY_PATH    := ${DIR_KEY_PAIR}/$(CLUSTER_NAME)/${AZURE_VM_KEY_NA
 # docker.io
 # export AZURE_VHD_URI 				?= https://acstackimages.blob.core.windows.net/system/Microsoft.Compute/Images/acs-vhds/acstack-1526251964-osDisk.7fdd6d44-e3bd-4020-8033-47877b422c07.vhd
 # cri/containerd/runc
-export AZURE_VHD_URI 				?= "https://aztack1528763526.blob.core.windows.net/system/Microsoft.Compute/Images/aztack-vhds/aztack-1528764420-osDisk.6f2e84e6-2f87-4740-8f04-5a0cfbd0cafe.vhd?se=2018-07-12T00%3A59%3A00Z&sig=fmrofUYtSGxQrRqxakw9N2Ze6dsLADRtWlKbbmZpN8o%3D&sp=r&spr=https%2Chttp&sr=b&sv=2016-05-31"
+export AZURE_VHD_URI 				?= "https://aztack1530232142.blob.core.windows.net/system/Microsoft.Compute/Images/aztack-vhds/aztack-1530233068-osDisk.f6dd30b7-14ef-406b-9d64-6c61e191f4b1.vhd?se=2018-07-29T00%3A55%3A21Z&sig=Q1VHTRJahY1C4XOKJn1dcnZiRtIMVWXEP4LypNxbLu8%3D&sp=r&spr=https%2Chttp&sr=b&sv=2016-05-31"
 export INTERNAL_TLD         := $(CLUSTER_NAME).aztack
 
 export CIDR_VNET            ?= 10.0.0.0/8

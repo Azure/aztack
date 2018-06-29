@@ -1,5 +1,5 @@
 #!/bin/bash -eux
-ETCD_VER=v3.3.7
+ETCD_VER=v3.3.8
 
 groupadd --system etcd
 useradd --home-dir "/var/lib/etcd" --system \
