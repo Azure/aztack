@@ -76,6 +76,7 @@
     {
       "type": "shell",
       "inline": [
+        "sudo /bin/bash -eux /home/packer/install-core-packages.sh",
         "sudo /bin/bash -eux /home/packer/install-cri.sh",
         "sudo /bin/bash -eux /home/packer/install-cni.sh",
         "sudo /bin/bash -eux /home/packer/install-kubernetes.sh",

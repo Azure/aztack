@@ -2,14 +2,6 @@
 
 kubernetes_release_tag="v1.10.4"
 
-export DEBIAN_FRONTEND=noninteractive
-apt_flags=(-o "Dpkg::Options::=--force-confnew" -qy)
-
-apt-get update -q
-apt-get upgrade "${apt_flags[@]}"
-
-apt-get install "${apt_flags[@]}" conntrack ipset socat jq traceroute ca-certificates
-
 # Download the official Kubernetes release binaries
 wget -q --show-progress --https-only --timestamping \
   "https://storage.googleapis.com/kubernetes-release/release/${kubernetes_release_tag}/bin/linux/amd64/kube-apiserver" \
