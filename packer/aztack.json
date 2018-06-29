@@ -50,6 +50,11 @@
     },
     {
       "type": "file",
+      "source": "./install-core-packages.sh",
+      "destination": "/home/packer/install-core-packages.sh"
+    },
+    {
+      "type": "file",
       "source": "./install-cri.sh",
       "destination": "/home/packer/install-cri.sh"
     },
