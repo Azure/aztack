@@ -1,6 +1,6 @@
 #!/bin/bash -eux
 
-kubernetes_release_tag="v1.10.4"
+kubernetes_release_tag="v1.11.0"
 
 # Download the official Kubernetes release binaries
 wget -q --show-progress --https-only --timestamping \
