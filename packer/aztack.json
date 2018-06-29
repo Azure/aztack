@@ -32,7 +32,8 @@
       },
 
       "location": "{{user `location`}}",
-      "vm_size": "{{user `vm_size`}}"
+			"vm_size": "{{user `vm_size`}}",
+			"os_disk_size_gb": 1023
     }
   ],
   "provisioners": [
@@ -89,6 +90,14 @@
         "sudo /bin/bash -eux /home/packer/cleanup-vhd.sh",
         "rm /home/packer/*.sh"
       ]
-    }
+		},
+		{
+     "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
+     "inline": [
+       "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
+     ],
+     "inline_shebang": "/bin/sh -x",
+     "type": "shell"
+   }
   ]
 }
